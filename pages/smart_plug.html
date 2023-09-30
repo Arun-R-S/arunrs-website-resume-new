@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" style="--vh:6.64px;">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>
+        Bluetooth Smart Plug
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../favicon.png" type="image/x-icon">
+
+    <!-- css -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap">
+    <link rel="stylesheet" href="../src_files/uikit-custom.min.css">
+    <link rel="stylesheet" href="../src_files/app.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body id="body-app" class="" data-new-gr-c-s-check-loaded="14.1031.0" data-gr-ext-installed="">
+
+    <div class="uk-grid-collapse  uk-child-width-1-1 uk-animation-scale-down" data-uk-grid>
+        <!-- <div class="uk-background-cover uk-width-2-5@m  yb-full-height " data-uk-img data-src="../src_files/img/Anderson.jpg" >  </div> -->
+        <div class="uk-padding-large  uk-width-expand@m yb-full-height yb-full-height-fixed yb-work-content">
+            <p><span class="yb-label uk-label uk-label-success uk-border-rounded">Completed</span> </p>
+            <h1 class="yb-section-title">Bluetooth Smart Plug</h1>
+            <h5>Arduino, Android App</h5>
+            <hr>
+            <p>
+                A smart plug is a power plug which can be fitted between power cords and sockets to function as remote 
+                controlled power switch. As such, smart plugs can be used to make "dumb" electrical equipment "smart" and 
+                thereby enable such devices for home automation or building automation purposes.
+                    <br><br>
+                Smart plugs can for example be controlled via a mobile application, a smart home hub or a virtual 
+                assistant. Examples of protocols used for communication with smart plugs include Wi-Fi, Bluetooth, 
+                ZigBee and Z-Wave. Many smart plugs have a built-in ammeter so that electric energy consumption 
+                (measured in kilowatt-hours) of the connected equipment can be monitored. Smart plugs often need to 
+                have a slim profile in order to not covering and preventing access to neighbouring sockets in a wall 
+                socket or power strip.
+            </p>
+            <div data-uk-grid class="uk-child-width-1-4 uk-grid-medium">
+                <div class="value-img">
+                    <img width="300px" src="../src_files/img/projects/smart_plug/screen1.jpg" data-action="zoom"
+                        data-original="../src_files/img/projects/smart_plug/screen1.jpg" id="img1"
+                        class="uk-border-rounded" alt="">
+                </div>
+                <div class="value-img">
+                    <img width="300px" src="../src_files/img/projects/smart_plug/screen2.jpg" data-action="zoom"
+                        data-original="../src_files/img/projects/smart_plug/screen2.jpg" id="img2"
+                        class="uk-border-rounded" alt="">
+                </div>
+            </div>
+            <p></p>
+
+            <h4 class="yb-section-title uk-heading-line"><span>Output</span></h4>
+            <div data-uk-grid class="uk-child-width-1-1 uk-grid-medium">
+                <div>
+                    <center>
+                        <iframe id="video-player" style="border-radius: 5px;"
+                            src="https://www.youtube.com/embed/nQcVCe9gdmE" frameborder="0" allowfullscreen>
+                        </iframe>
+                    </center>
+                </div>
+            </div>
+            <div class="yb-testi-item">
+                <div class="yb-testi-item-desc">
+                    <h4></h4>
+                    I have found a solution for switching the plug on and off without touching.
+                    You can control the smart plug using mobile App through Bluetooth.
+                </div>
+                <div class="yb-testi-item-img">
+                    <div data-uk-grid class="uk-flex-middle uk-grid-small">
+                        <div>
+                            <img src="../src_files/img/Anderson.jpg" width="300" height="300">
+                        </div>
+                        <div class="uk-text-bold uk-text-small">
+                            <span></span>
+                            <span data-uk-icon="minus"></span>
+                            <span>Arun R S</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        #img1,
+        #img2,
+        #img3,
+        #img4,
+        #img5,
+        #img6 {
+            box-shadow: 0px 0px 5px grey;
+        }
+    </style>
+    <script src="../src_files/plugins.min.js"></script>
+    <script src="../src_files/app.js"></script>
+    <script src="../src_files/zooming.min.js"></script>
+    <script>
+        new Zooming().listen('#img1');
+        new Zooming().listen('#img2');
+        $("#body-app").attr("class", localStorage.getItem("theme"));
+        function change_theme() {
+            if ($("#body-app").attr("class") == "") {
+                $("#body-app").attr("class", "yb-dark-skin uk-light");
+                localStorage.setItem("theme", "yb-dark-skin uk-light");
+            }
+            else {
+                $("#body-app").attr("class", "");
+                localStorage.setItem("theme", "");
+            }
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" style="--vh:6.64px;">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>
+        Gas Leakage Detector
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../favicon.png" type="image/x-icon">
+
+    <!-- css -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap">
+    <link rel="stylesheet" href="../src_files/uikit-custom.min.css">
+    <link rel="stylesheet" href="../src_files/app.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body id="body-app" class="" data-new-gr-c-s-check-loaded="14.1031.0" data-gr-ext-installed="">
+
+    <div class="uk-grid-collapse  uk-child-width-1-1 uk-animation-scale-down" data-uk-grid>
+        <!-- <div class="uk-background-cover uk-width-2-5@m  yb-full-height " data-uk-img data-src="../src_files/img/Anderson.jpg" >  </div> -->
+        <div class="uk-padding-large  uk-width-expand@m yb-full-height yb-full-height-fixed yb-work-content">
+            <p><span class="yb-label uk-label uk-label-success uk-border-rounded">Completed</span> </p>
+            <h1 class="yb-section-title">Gas Leakage Detector</h1>
+            <h5>Arduino</h5>
+            <hr>
+            <p>In India most of the household appliances include the LPG gas cylinder for cooking. In day to day life the
+             need LPG cylinder increases widely. But most of the users doesn’t have the awareness about the leakage 
+             of the gas. The gas leakage happens due to the use of old gas tubes, worn out regulators, improper cylinder 
+             knob, etc. The LPG gas contains the mixture of butane and propane. If the 1.8% to 9.5% of the gas is mixed 
+             with the air will make it an explosive. So small leakage causes a wide range of damage when burst. So, this 
+             device will detect the leakage of gas and alert the house owner immediately. This intimation will prevent 
+             from the explosion.<br><br> The gas sensor detects the gas mixture which present in the air. If the gas mixture 
+             detected it turn of the cylinder knob first. This knob can be turned of by the motor which is connected with 
+             the knob. This motor can be controlled by the motor driver IC. L293D is the motor driver IC. It is a 16 pin IC. 
+             This IC have the capability to drive two motors. After turn off the knob it alerts the house owner to make a 
+             phone call. The GSM circuit which is used to make a phone call. Sim800A is the suited to make a call. This 
+             GSM will support the 2G and 3G broadband. After the call alert the buzzer in the circuit start alerting the 
+             neighbour house. This device is portable so it can be installed easily.</p>
+            <div data-uk-grid class="uk-child-width-1-2 uk-grid-medium">
+                <div class="value-img">
+                    <img src="../src_files/img/projects/gas_leakage/main1.PNG" data-action="zoom"
+                        data-original="../src_files/img/projects/gas_leakage/main1.PNG" id="img1"
+                        class="uk-border-rounded" alt="">
+                </div>
+                <div class="value-img">
+                    <img src="../src_files/img/projects/gas_leakage/main2.PNG" data-action="zoom"
+                        data-original="../src_files/img/projects/gas_leakage/main2.PNG" id="img2"
+                        class="uk-border-rounded" alt="">
+                </div>
+            </div>
+            <p></p>
+
+            <h4 class="yb-section-title uk-heading-line"><span>Output</span></h4>
+            <div data-uk-grid class="uk-child-width-1-1 uk-grid-medium">
+                <div>
+                    <center>
+                        <iframe id="video-player" style="border-radius: 5px;"
+                            src="https://www.youtube.com/embed/0rUOi2Igtac" frameborder="0" allowfullscreen>
+                        </iframe>
+                    </center>
+                </div>
+            </div>
+            <div class="yb-testi-item">
+                <div class="yb-testi-item-desc">
+                    <h4></h4>
+                    I have found a solution for preventing the blast or explosion caused by gas leakage in cylinder.
+                    You can recieve a mobile alert and notification at the time of gas leakage.
+
+                </div>
+                <div class="yb-testi-item-img">
+                    <div data-uk-grid class="uk-flex-middle uk-grid-small">
+                        <div>
+                            <img src="../src_files/img/Anderson.jpg" width="300" height="300">
+                        </div>
+                        <div class="uk-text-bold uk-text-small">
+                            <span></span>
+                            <span data-uk-icon="minus"></span>
+                            <span>Arun R S</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        #img1,
+        #img2,
+        #img3,
+        #img4,
+        #img5,
+        #img6 {
+            box-shadow: 0px 0px 5px grey;
+        }
+    </style>
+    <script src="../src_files/plugins.min.js"></script>
+    <script src="../src_files/app.js"></script>
+    <script src="../src_files/zooming.min.js"></script>
+    <script>
+        new Zooming().listen('#img1');
+        new Zooming().listen('#img2');
+        $("#body-app").attr("class", localStorage.getItem("theme"));
+        function change_theme() {
+            if ($("#body-app").attr("class") == "") {
+                $("#body-app").attr("class", "yb-dark-skin uk-light");
+                localStorage.setItem("theme", "yb-dark-skin uk-light");
+            }
+            else {
+                $("#body-app").attr("class", "");
+                localStorage.setItem("theme", "");
+            }
+        }
+
+    </script>
+</body>
+
+</html>

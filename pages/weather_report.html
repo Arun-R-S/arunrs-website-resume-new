@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" style="--vh:6.64px;">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>
+    Local Weather Report
+  </title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="../favicon.png" type="image/x-icon">
+
+  <!-- css -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap">
+  <link rel="stylesheet" href="../src_files/uikit-custom.min.css">
+  <link rel="stylesheet" href="../src_files/app.css">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body id="body-app" class="" data-new-gr-c-s-check-loaded="14.1031.0" data-gr-ext-installed="">
+
+    <div class="uk-grid-collapse  uk-child-width-1-1 uk-animation-scale-down" data-uk-grid>
+        <!-- <div class="uk-background-cover uk-width-2-5@m  yb-full-height " data-uk-img data-src="../src_files/img/Anderson.jpg" >  </div> -->
+        <div class="uk-padding-large  uk-width-expand@m yb-full-height yb-full-height-fixed yb-work-content" >
+          <p><span class="yb-label uk-label uk-label-success uk-border-rounded">Completed</span> </p>
+          <h1 class="yb-section-title">Local Weather Report</h1> 
+          <h5>PHP, OpenWeatherMap API</h5> 
+          <hr> 
+          <p>This is the first mini-project that I have done by learning PHP. 
+            This application gets the JSON information from the Open Weather Map API for the pin code that you provide. 
+            The JSON information converts into responsive UI elements in PHP which display the weather information for 
+            7 days.
+            <br><br>
+            Back-end and Front-end :<br>
+            1. PHP<br>
+            2. Open Weather Map API<br>
+            3. HTML, CSS, JavaScript, Bootstrap </p>
+          <div data-uk-grid class="uk-child-width-1-2 uk-grid-medium" >
+            <div class="value-img">
+              <img src="../src_files/img/projects/weather_report/index.PNG" data-action="zoom" data-original="../src_files/img/projects/weather_report/index.PNG" id="img1" class="uk-border-rounded" alt="">
+            </div>
+            <div class="value-img">
+              <img src="../src_files/img/projects/weather_report/main.PNG" data-action="zoom" data-original="../src_files/img/projects/weather_report/main.PNG" id="img2" class="uk-border-rounded" alt="">
+            </div>
+            <div class="value-img ">
+              <img src="../src_files/img/projects/weather_report/main2.PNG" data-action="zoom" data-original="../src_files/img/projects/weather_report/main2.PNG" id="img3" class="uk-border-rounded" alt="">
+            </div>
+          </div>
+          <p></p> 
+          <h4 class="yb-section-title uk-heading-line"><span>Website</span></h4>
+          <div class="yb-testi-item">
+        <div class="yb-testi-item-desc">
+          <h4></h4>
+          I have developed and hosted a website to get the live weather feed of your locality.
+           <a href="http://arunrs.epizy.com/project/climato/"
+           target="_blank">Climato</a>
+        </div>
+        <div class="yb-testi-item-img">
+          <div data-uk-grid class="uk-flex-middle uk-grid-small">
+            <div>
+              <img src="../src_files/img/Anderson.jpg" width="300" height="300">
+            </div>
+            <div class="uk-text-bold uk-text-small">
+              <span></span>
+              <span data-uk-icon="minus"></span>
+              <span>Arun R S</span>
+            </div>
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+      <style>
+        #img1,#img2,#img3,#img4,#img5,#img6{
+          box-shadow: 0px 0px 5px grey;
+        }
+      </style>
+<script src="../src_files/plugins.min.js"></script>
+<script src="../src_files/app.js"></script>
+<script src="../src_files/zooming.min.js"></script>
+<script>
+    new Zooming().listen('#img1');
+    new Zooming().listen('#img2');
+    new Zooming().listen('#img3');
+    $("#body-app").attr("class",localStorage.getItem("theme"));
+    function change_theme(){
+      if($("#body-app").attr("class")=="")
+      {
+        $("#body-app").attr("class","yb-dark-skin uk-light");
+        localStorage.setItem("theme","yb-dark-skin uk-light");
+      }
+      else{
+        $("#body-app").attr("class","");
+        localStorage.setItem("theme","");
+      }
+    }
+    
+  </script>
+</body>
+</html>
